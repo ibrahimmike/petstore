@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="com.sauce"   parallel="tests" thread-count="4">
+    <!--    <listeners>-->
+    <!--        <listener class-name="com.sauce.listeners.ListenersClass"/>-->
+
+    <!--    </listeners>-->
+    <test name="Sanity">
+        <classes >
+            <class name="tests.HomePageDesignTest"></class>
+        </classes>
+    </test>
+    <test name="HomePage">
+        <classes >
+            <class name="tests.BuyingProductsTests"></class>
+        </classes>
+    </test>
+<!--    <test name="HomePage3">-->
+<!--        <classes >-->
+<!--            <class name="tests.HomePageTest"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+</suite>
